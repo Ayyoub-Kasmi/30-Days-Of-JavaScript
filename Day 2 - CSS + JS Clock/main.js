@@ -1,0 +1,10 @@
+var today = new Date();
+console.log(today);
+
+const hours = today.getHours();
+const minutes = today.getMinutes();
+const seconds = today.getSeconds();
+
+console.log(seconds);
+
+const indicator = document.querySelector('#seconds');

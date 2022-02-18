@@ -1,0 +1,11 @@
+var today = new Date();
+console.log(today);
+
+const hours = today.getHours();
+const minutes = today.getMinutes();
+const seconds = today.getSeconds();
+
+console.log(seconds);
+
+const indicator = document.querySelector('#seconds');
+indicator.style.transform=`rotate(${seconds*6}deg)`;

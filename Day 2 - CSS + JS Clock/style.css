@@ -2,7 +2,7 @@ div {
 	border: 2px solid black;
 }
 
-#container {
+body {
 	height: 500px;
 	display: flex;
 	justify-content: center;
@@ -12,31 +12,25 @@ div {
 #circle {
 	height: 200px;
 	width: 200px;
+	border: 20px solid red;
+	padding: 20px;
 	border-radius: 50%;
 	position: relative;
 }
 
-.indicator {
-	height: 6px;
-	width: 50%;
+.hand {
+	height: 2px;
+	width: 47%;
 	margin: 0px;
 	border-radius: 20px;
 	background: black;
 	position: absolute;
 	top: 50%;
-	transform-origin: 100%;
+	right: 50%;
+	transform-origin: 99%;
+	transform: rotate(90deg);
 }
 
 #seconds {
-	transition: all 0.5s;
-	animation: second 60s infinite;
-}
-
-@keyframes second {
-	0% {
-		
-	}
-	100% {
-		transform: rotate(360deg);
-	}
+	transition: all 1s;
 }

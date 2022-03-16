@@ -1,0 +1,92 @@
+body {
+	overflow: hidden;
+}
+.panels{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+}
+.panel {
+	width: 20%;
+	display: flex;
+	flex-direction: column;
+	flex:  1;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 18px;
+	color: white;
+	transition: all 1s;
+}
+
+.middle {
+	font-size: 2em;
+}
+
+.panel p {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.panel p:first-child {
+	transform: translateY(-200px);
+	transition: all 1s;
+}
+
+.panel.active p:first-child {
+	transform: translateY(0);
+	transition: all 1s;
+}
+
+.panel p:last-child {
+	transform: translateY(200px);
+	transition: all 1s;
+}
+
+.panel.active p:last-child {
+	transform: translateY(0);
+	transition: all 1s;
+}
+
+.open {
+	flex: 5;
+	font-size: 40px;
+}
+
+.panel1{
+	background: url("images/1.jpg");
+	background-size: cover;
+	background-position: center;
+}
+.panel2{
+	background: url("images/2.jpg");
+	background-size: cover;
+	background-position: center;
+}
+.panel3{
+	background: url("images/3.jpg");
+	background-size: cover;
+	background-position: center;
+}
+.panel4{
+	background: url("images/4.jpg");
+	background-size: cover;
+	background-position: center;
+}
+.panel5{
+	background: url("images/5.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+
+@keyframes grow {
+	10% {
+		width: 15%;
+	}
+	30% {
+		width:  50%;
+		transform: scale(1.5);
+	}
+}
